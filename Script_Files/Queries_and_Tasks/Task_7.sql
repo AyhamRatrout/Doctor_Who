@@ -65,6 +65,6 @@ BEGIN
 		END
 
 	RETURN (CASE WHEN LEN(@result) > 0 THEN @result
-	ELSE 'No Enemies appeared on the Episode you have provided :(' END);
+	ELSE 'No enemies appear on this episode' END);
 END;
 GO
