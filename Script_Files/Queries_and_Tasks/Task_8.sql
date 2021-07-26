@@ -1,6 +1,9 @@
 USE DoctorWho;
 GO
 
+DROP VIEW IF EXISTS viewEpisodes;
+GO
+
 CREATE VIEW viewEpisodes AS
 SELECT E.SeriesNumber AS [Series Number], 
 	   E.EpisodeNumber AS [Episode Number], 

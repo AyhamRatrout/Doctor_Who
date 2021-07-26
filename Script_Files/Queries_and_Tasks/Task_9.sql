@@ -1,6 +1,9 @@
 USE DoctorWho;
 GO
 
+DROP PROCEDURE IF EXISTS spSummariseEpisodes;
+GO
+
 CREATE PROCEDURE spSummariseEpisodes AS
 BEGIN
 	SELECT C.CompanionName AS [Three Most Frequently-Appearing Companions]
@@ -21,4 +24,3 @@ BEGIN
 END;
 
 EXEC spSummariseEpisodes;
-

@@ -1,8 +1,6 @@
 USE DoctorWho;
 GO
 
-SELECT * FROM tblCompanion;
-
 DELETE FROM tblCompanion
 WHERE CompanionId IN (
 						SELECT CompanionId
@@ -12,5 +10,3 @@ WHERE CompanionId IN (
 						FROM tblEpisodeCompanion
 						GROUP BY CompanionId
 					 );
-
-SELECT * FROM tblCompanion;

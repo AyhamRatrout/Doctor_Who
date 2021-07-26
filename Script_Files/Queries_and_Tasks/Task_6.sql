@@ -1,6 +1,12 @@
 USE DoctorWho;
 GO
 
+DROP FUNCTION IF EXISTS fnRetrieveListOfCompanionIds;
+DROP FUNCTION IF EXISTS fnRetrieveListOfCompanionNames;
+DROP FUNCTION IF EXISTS fnRetrieveCompanions;
+DROP FUNCTION IF EXISTS fnCompanions;
+GO
+
 --Helper function retrieves a Table of the Ids of all the companions that appeared in the provided episode.
 CREATE FUNCTION fnRetrieveListOfCompanionIds (@EpisodeId INT)
 RETURNS TABLE AS

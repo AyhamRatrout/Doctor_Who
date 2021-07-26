@@ -1,6 +1,12 @@
 USE DoctorWho;
 GO
 
+DROP FUNCTION IF EXISTS fnRetrieveListOfEnemyIds;
+DROP FUNCTION IF EXISTS fnRetrieveListOfEnemyNames;
+DROP FUNCTION IF EXISTS fnRetrieveEnemies;
+DROP FUNCTION IF EXISTS fnEnemies;
+GO
+
 --Helper function retrieves a Table of the Ids of all the enemies that appeared in the provided episode.
 CREATE FUNCTION fnRetrieveListOfEnemyIds (@EpisodeId INT)
 RETURNS TABLE AS

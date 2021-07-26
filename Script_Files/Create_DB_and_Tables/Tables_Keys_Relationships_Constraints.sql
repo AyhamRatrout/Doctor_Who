@@ -1,5 +1,22 @@
+USE master;
+GO
+
+DROP DATABASE IF EXISTS DoctorWho;
+GO
+
+CREATE DATABASE DoctorWho;
+GO
+
 USE DoctorWho;
 GO
+
+DROP TABLE IF EXISTS tblEnemy;
+DROP TABLE IF EXISTS tblAuthor;
+DROP TABLE IF EXISTS tblDoctor;
+DROP TABLE IF EXISTS tblCompanion;
+DROP TABLE IF EXISTS tblEpisode;
+DROP TABLE IF EXISTS tblEpisodeCompanion;
+DROP TABLE IF EXISTS tblEpisodeEnemy;
 
 CREATE TABLE tblEnemy (
 						EnemyId INT NOT NULL IDENTITY PRIMARY KEY,
