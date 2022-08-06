@@ -35,9 +35,9 @@ Requirements:
 My repository is divided into the following folders and sub-folders:
 1. The "Data_Files" Folder: contains all the CSV files used to populate the databse and its objects with various information.
 2. The "Script_Files" Folder: this folder contains the following sub-folders:
-    a. Create_DB_and_Tables: contains a backup file for the database as well as the script to create the tables making up this database.
-    b. Populate_Tables_ contains all the scripts required to populate each one of the tables.
-    c. Queries_and_Tasks: contains scripts implementing each one of the 9 requirements above starting from requirement number 4.
+    * Create_DB_and_Tables: contains a backup file for the database as well as the script to create the tables making up this database.
+    * Populate_Tables_ contains all the scripts required to populate each one of the tables.
+    * Queries_and_Tasks: contains scripts implementing each one of the 9 requirements above starting from requirement number 4.
 
 Thanks,
 
